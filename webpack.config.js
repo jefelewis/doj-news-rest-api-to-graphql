@@ -3,7 +3,6 @@ const PATH = require('path');
 const HTMLWEBPACKPLUGIN = require('html-webpack-plugin');
 require('babel-register');
 
-
 // Webpack Configuration
 const CONFIG = {
   // Entry
