@@ -17,7 +17,7 @@ If you'd like to contribute to this project, please fork this repository and sub
 Operation Refactor America is a not associated with any government agency, but our goal is to empower citizens with transparent data. Only a fraction of government agencies provide public APIs, which are usually poorly documented, built on archaic REST architecture, and contains scattered data. Our mission is to retrieve that valuable data and convert them into an intuitive and modern API using GraphQL Server.
 
 ## About the Data
-The data comes directly from the United States Department of Justice's REST API (DOJ News). The REST endpoints have been mapped as GraphQL types and resolvers. A summary of endpoints and documentation can be found here: https://www.bls.gov/help/hlpforma.htm
+The data comes directly from the United States Department of Justice's REST API (DOJ News). The REST endpoints have been mapped as GraphQL types and resolvers. A summary of endpoints and documentation can be found here: https://www.justice.gov/developer/api-documentation/api_v1
 
 ## GraphQL Server: Apollo Server
 This GraphQL server uses apollo-server-express and not Facebook's graphql-express.
