@@ -60,4 +60,3 @@ This GraphQL server uses apollo-server-express and not Facebook's graphql-expres
 
 
 **GraphQL Result:**
-
