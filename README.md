@@ -19,6 +19,8 @@ Operation Refactor America is a not associated with any government agency, but o
 ## About the Data
 The data comes directly from the United States Department of Justice's REST API (DOJ News). The REST endpoints have been mapped as GraphQL types and resolvers. A summary of endpoints and documentation can be found here: https://www.justice.gov/developer/api-documentation/api_v1
 
+Note: Maximum of 10 requests per second or "experience degraded performance and may be blocked entirely"
+
 ## GraphQL Server: Apollo Server
 This GraphQL server uses apollo-server-express and not Facebook's graphql-express.
 
