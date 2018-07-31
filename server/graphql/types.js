@@ -1,5 +1,9 @@
+// Imports: GraphQL
+import { gql } from 'apollo-server-express';
+
+
 // GraphQL: TypeDefs
-const TYPEDEFS = `
+const TYPEDEFS = gql`
 
   type Query {
     getLastTenBlogEntries: RootQuery
@@ -17,13 +21,13 @@ const TYPEDEFS = `
 
   type RootQuery {
     metadata: Metadata
-    Results: [Result]
+    results: [Result]
   }
 
   type Metadata {
     responseInfo: ResponseInfo
     resultset: ResultSet
-    executionTime: Int
+    executionTime: String
   }
 
   type ResponseInfo {
@@ -38,16 +42,16 @@ const TYPEDEFS = `
   }
 
   type Result {
-    attachments: String
+    attachments: [Attachment]
     body: String
     changed: String
     component: [Component]
     created: String
     date: String
-    image: String
-    teaser: String
+    image: [Image]
+    teaser: [Teaser]
     title: String
-    topic: String
+    topic: [Topic]
     url: String
     uuid: String
     vuuid: String
@@ -56,6 +60,22 @@ const TYPEDEFS = `
   type Component {
     uuid: String
     name: String
+  }
+
+  type Attachment {
+    hi: String
+  }
+
+  type Image {
+    hi: String
+  }
+
+  type Teaser {
+    hi: String
+  }
+
+  type Topic {
+    hi: String
   }
 `;
 
