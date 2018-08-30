@@ -1,15 +1,9 @@
-// Imports: Express
+// Imports: Dependencies
 import express from 'express';
-const APP = express();
-
-// Imports: GraphQL
-import SERVER from './graphql/schema.js';
-
-// Imports: Mongoose
-
-
-// Imports: Middleware
 import cors from 'cors';
+import SERVER from './graphql/schema';
+
+const APP = express();
 
 
 // Database: Connection
@@ -21,7 +15,7 @@ APP.use(cors());
 
 // Middleware: GraphQL
 SERVER.applyMiddleware({
-  app: APP
+  app: APP,
 });
 
 
