@@ -1,7 +1,7 @@
 # United States Department of Justice GraphQL API
 
 *  [About The Data](#about-the-data)
-*  [Built Using](#built-using)
+*  [Built With](#built-with)
 *  [Getting Started](#getting-started)
 *  [GraphQL Query Examples](#graphql-query-examples)
 
@@ -13,7 +13,7 @@ The data comes directly from the United States Department of Justice's REST API 
 - No API Key required.
 - Department of Justice has a request limit of 10 requests per second.
 
-## Built Using
+## Built With
 * [Node.js](https://nodejs.org/en) - JavaScript Runtime Environment
 * [Express](https://expressjs.com) - Web framework
 * [GraphQL](https://graphql.org) - Query Language
