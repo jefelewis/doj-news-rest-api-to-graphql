@@ -10,6 +10,7 @@
 Only a fraction of government agencies provide public APIs, which are usually poorly documented and built on REST architecture. Our mission is to retrieve that valuable data and convert them into an intuitive and modern GraphQL API.
 
 The data comes directly from the United States Department of Justice's REST API (DOJ News). The REST endpoints have been mapped as GraphQL types and resolvers. A summary of endpoints and documentation can be found here: https://www.justice.gov/developer/api-documentation/api_v1
+
 **Note: Maximum of 10 requests per second or "experience degraded performance and may be blocked entirely"**
 
 ## Built Using
