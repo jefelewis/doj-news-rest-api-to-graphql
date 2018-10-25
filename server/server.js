@@ -2,25 +2,19 @@
 import express from 'express';
 import cors from 'cors';
 import SERVER from './graphql/schema';
+import opn from 'opn';
 
+// Express App
 const APP = express();
-
-
-// Database: Connection
 
 
 // Middleware: CORS
 APP.use(cors());
 
-
 // Middleware: GraphQL
 SERVER.applyMiddleware({
   app: APP,
 });
-
-
-// Use: Static Files
-
 
 // Express: Port
 const PORT = 4000 || process.env;
@@ -31,6 +25,8 @@ APP.listen(PORT, () => {
   console.log(`http://localhost:${PORT}/graphql`);
 });
 
+// Open URL On Server Start
+opn(`http://localhost:${PORT}/graphql`);
 
 // Exports
 export default APP;
