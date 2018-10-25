@@ -1,7 +1,7 @@
 # United States Department of Justice GraphQL API
 Only a fraction of government agencies provide public APIs, which are usually poorly documented and built on REST architecture. Our mission is to retrieve that valuable data and convert them into an intuitive and modern GraphQL API. The REST endpoints have been mapped as GraphQL types and resolvers.
 
-## Table Of Contents
+## Table Of Contents:
 *  [About The Data](#about-the-data)
 *  [Built Using](#built-using)
 *  [Getting Started](#getting-started)
