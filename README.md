@@ -1,6 +1,5 @@
 # United States Department of Justice GraphQL API
 
-## Table Of Contents
 *  [About The Data](#about-the-data)
 *  [Built Using](#built-using)
 *  [Getting Started](#getting-started)
