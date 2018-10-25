@@ -54,13 +54,13 @@ const RESOLVERS = {
 
 
     // DEPARTMENT OF JUSTICE (DOJ) VACANCY ANNOUNCEMENTS
-    // Get All Vacancy Announcments
+    // Get All Vacancy Announcements
     getAllVacancyAnnouncements: (parent, args) => {
       return axios.get(`http://www.justice.gov/api/v1/vacancy_announcements.json?pagesize=99999999999`)
         .then(response => response.data)
         .catch(error => console.log(error));
     },
-    // Get Vacancy Announcment by ID
+    // Get Vacancy Announcement by ID
     getVacancyAnnouncementById: (parent, args) => {
       return axios.get(`http://www.justice.gov/api/v1/vacancy_announcements/${args.id}.json?pagesize=99999999999`)
         .then(response => response.data)
