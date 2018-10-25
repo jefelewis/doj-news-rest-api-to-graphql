@@ -6,16 +6,16 @@ const TYPEDEFS = gql`
 
   type Query {
     getAllBlogEntries: RootQuery
-    getBlogEntryById(ID: String): RootQuery
+    getBlogEntryById(id: String): RootQuery
 
     getAllPressReleases: RootQuery
-    getPressReleaseById(ID: String): RootQuery
+    getPressReleaseById(id: String): RootQuery
 
     getAllSpeeches: RootQuery
-    getSpeechById(ID: String): RootQuery
+    getSpeechById(id: String): RootQuery
 
     getAllVacancyAnnouncements: RootQuery
-    getVacancyAnnouncementById(ID: String): RootQuery
+    getVacancyAnnouncementById(id: String): RootQuery
   }
 
   type RootQuery {

@@ -14,7 +14,7 @@ const RESOLVERS = {
     },
     // Get Blog Entries by ID
     getBlogEntryById: (parent, args) => {
-      return axios.get(`http://www.justice.gov/api/v1/blog_entries/${args.ID}.json?sort=date&direction=desc&pagesize=99999999999`)
+      return axios.get(`http://www.justice.gov/api/v1/blog_entries/${args.id}.json?sort=date&direction=desc&pagesize=99999999999`)
         .then(response => response.data)
         .catch(error => console.log(error));
     },
@@ -30,7 +30,7 @@ const RESOLVERS = {
     },
     // Get Press Release by ID
     getPressReleaseById: (parent, args) => {
-      return axios.get(`http://www.justice.gov/api/v1/press_releases/${args.ID}.json?direction=desc&pagesize=99999999999`)
+      return axios.get(`http://www.justice.gov/api/v1/press_releases/${args.id}.json?direction=desc&pagesize=99999999999`)
         .then(response => response.data)
         .catch(error => console.log(error));
     },
@@ -46,7 +46,7 @@ const RESOLVERS = {
     },
     // Get Speech by ID
     getSpeechById: (parent, args) => {
-      return axios.get(`http://www.justice.gov/api/v1/speeches/${args.ID}.json?pagesize=99999999999`)
+      return axios.get(`http://www.justice.gov/api/v1/speeches/${args.id}.json?pagesize=99999999999`)
         .then(response => response.data)
         .catch(error => console.log(error));
     },
@@ -62,7 +62,7 @@ const RESOLVERS = {
     },
     // Get Vacancy Announcment by ID
     getVacancyAnnouncementById: (parent, args) => {
-      return axios.get(`http://www.justice.gov/api/v1/vacancy_announcements/${args.ID}.json?pagesize=99999999999`)
+      return axios.get(`http://www.justice.gov/api/v1/vacancy_announcements/${args.id}.json?pagesize=99999999999`)
         .then(response => response.data)
         .catch(error => console.log(error));
     },
