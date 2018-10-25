@@ -73,21 +73,117 @@ http://localhost:4000/graphql
 
 **Example #2: Get Last 10 Press Releases:**
 ```
-Query #1
+{
+  getLastTenPressReleases {
+    metadata {
+      responseInfo {
+        status
+        developerMessage
+      }
+      resultset {
+        count
+        pagesize
+        page
+      }
+      executionTime
+    }
+    results {
+      body
+      changed
+      created
+      date
+      image
+      teaser
+      title
+      topic
+      url
+      uuid
+      vuuid
+    }
+  }
+}
 ```
 
 
 **Example #3: Get Press Release By ID:**
 ```
-Query #1
+{
+	getPressReleaseById(ID: "e7a19711-08a2-48bf-84af-8a280b2c100a") {
+    results {
+      body
+      changed
+      created
+      date
+      title
+      uuid
+      vuuid
+    }
+  }
+}
 ```
 
 **Example #4: Get Last 10 Speeches:**
 ```
-Query #1
+{
+  getLastTenSpeeches {
+    metadata {
+      responseInfo {
+        status
+        developerMessage
+      }
+      resultset {
+        count
+        pagesize
+        page
+      }
+      executionTime
+    }
+    results {
+      body
+      changed
+      created
+      date
+      image
+      teaser
+      title
+      topic
+      url
+      uuid
+      vuuid
+    }
+  }
+}
 ```
 
-### Example #5: Get Last 10 Vacancy Announcements:
+**Example #5: Get Last 10 Vacancy Announcements:**
 ```
-Query #1
+{
+  getLastTenVacancyAnnouncements {
+    metadata {
+      responseInfo {
+        status
+        developerMessage
+      }
+      resultset {
+        count
+        pagesize
+        page
+      }
+      executionTime
+    }
+    results {
+      body
+      changed
+      created
+      date
+      image
+      teaser
+      title
+      topic
+      url
+      uuid
+      vuuid
+    }
+  }
+}
 ```
