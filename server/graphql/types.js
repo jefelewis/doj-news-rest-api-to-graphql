@@ -6,16 +6,16 @@ const TYPEDEFS = gql`
 
   type Query {
     getLastTenBlogEntries: RootQuery
-    getBlogEntryByID(ID: String): RootQuery
+    getBlogEntryById(ID: String): RootQuery
 
     getLastTenPressReleases: RootQuery
-    getPressReleaseByID(ID: String): RootQuery
+    getPressReleaseById(ID: String): RootQuery
 
     getLastTenSpeeches: RootQuery
-    getSpeechByID(ID: String): RootQuery
+    getSpeechById(ID: String): RootQuery
 
     getLastTenVacancyAnnouncements: RootQuery
-    getVacancyAnnouncementByID(ID: String): RootQuery
+    getVacancyAnnouncementById(ID: String): RootQuery
   }
 
   type RootQuery {
@@ -77,7 +77,6 @@ const TYPEDEFS = gql`
     hi: String
   }
 `;
-
 
 // Exports
 export default TYPEDEFS;

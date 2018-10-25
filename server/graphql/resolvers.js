@@ -13,7 +13,7 @@ const RESOLVERS = {
         .catch(error => console.log(error));
     },
     // Get Blog Entries by ID
-    getBlogEntryByID: (parent, args) => {
+    getBlogEntryById: (parent, args) => {
       return axios.get(`http://www.justice.gov/api/v1/blog_entries/${args.ID}.json?&pagesize=1`)
         .then(response => response.data)
         .catch(error => console.log(error));
@@ -29,7 +29,7 @@ const RESOLVERS = {
         .catch(error => console.log(error));
     },
     // Get Press Release by ID
-    getPressReleaseByID: (parent, args) => {
+    getPressReleaseById: (parent, args) => {
       return axios.get(`http://www.justice.gov/api/v1/press_releases/${args.ID}.json?&pagesize=1`)
         .then(response => response.data)
         .catch(error => console.log(error));
@@ -37,7 +37,7 @@ const RESOLVERS = {
 
 
 
-    // DEPARTMENT OF JUSTICE (DOJ) PRESS RELEASES
+    // DEPARTMENT OF JUSTICE (DOJ) SPEECHES
     // Get Last Ten Speeches
     getLastTenSpeeches: (parent, args) => {
       return axios.get(`http://www.justice.gov/api/v1/speeches.json?&pagesize=10`)
@@ -45,7 +45,7 @@ const RESOLVERS = {
         .catch(error => console.log(error));
     },
     // Get Speech by ID
-    getSpeechByID: (parent, args) => {
+    getSpeechById: (parent, args) => {
       return axios.get(`http://www.justice.gov/api/v1/speeches/${args.ID}.json?&pagesize=1`)
         .then(response => response.data)
         .catch(error => console.log(error));
@@ -61,7 +61,7 @@ const RESOLVERS = {
         .catch(error => console.log(error));
     },
     // Get Vacancy Announcment by ID
-    getVacancyAnnouncementByID: (parent, args) => {
+    getVacancyAnnouncementById: (parent, args) => {
       return axios.get(`http://www.justice.gov/api/v1/vacancy_announcements/${args.ID}.json?&pagesize=1`)
         .then(response => response.data)
         .catch(error => console.log(error));
