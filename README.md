@@ -58,10 +58,7 @@ http://localhost:4000/graphql
       changed
       created
       date
-      image
-      teaser
       title
-      topic
       url
       uuid
       vuuid
@@ -107,7 +104,7 @@ http://localhost:4000/graphql
 **Example #3: Get Press Release By ID:**
 ```
 {
-  getPressReleaseById(ID: "e7a19711-08a2-48bf-84af-8a280b2c100a") {
+	getPressReleaseById(ID: "e7a19711-08a2-48bf-84af-8a280b2c100a") {
     results {
       body
       changed
@@ -142,10 +139,7 @@ http://localhost:4000/graphql
       changed
       created
       date
-      image
-      teaser
       title
-      topic
       url
       uuid
       vuuid
@@ -175,10 +169,7 @@ http://localhost:4000/graphql
       changed
       created
       date
-      image
-      teaser
       title
-      topic
       url
       uuid
       vuuid

@@ -8,13 +8,13 @@ const RESOLVERS = {
     // DEPARTMENT OF JUSTICE (DOJ) BLOG ENTRIES
     // Get All Blog Entries
     getAllBlogEntries: (parent, args) => {
-      return axios.get(`http://www.justice.gov/api/v1/blog_entries.json?sort=data&direction=desc&pagesize=99999999999`)
+      return axios.get(`http://www.justice.gov/api/v1/blog_entries.json?sort=date&direction=desc&pagesize=99999999999`)
         .then(response => response.data)
         .catch(error => console.log(error));
     },
     // Get Blog Entries by ID
     getBlogEntryById: (parent, args) => {
-      return axios.get(`http://www.justice.gov/api/v1/blog_entries/${args.ID}.json?sort=data&direction=desc&pagesize=99999999999`)
+      return axios.get(`http://www.justice.gov/api/v1/blog_entries/${args.ID}.json?sort=date&direction=desc&pagesize=99999999999`)
         .then(response => response.data)
         .catch(error => console.log(error));
     },

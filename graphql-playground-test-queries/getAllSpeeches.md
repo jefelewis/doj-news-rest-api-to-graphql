@@ -17,10 +17,7 @@
       changed
       created
       date
-      image
-      teaser
       title
-      topic
       url
       uuid
       vuuid
