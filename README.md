@@ -40,7 +40,35 @@ http://localhost:4000/graphql
 ## GraphQL Query Examples
 **Example #1: Get Last 10 Blog Entries:**
 ```
-Query #1
+{
+  getLastTenBlogEntries {
+    metadata {
+      responseInfo {
+        status
+        developerMessage
+      }
+      resultset {
+        count
+        pagesize
+        page
+      }
+      executionTime
+    }
+    results {
+      body
+      changed
+      created
+      date
+      image
+      teaser
+      title
+      topic
+      url
+      uuid
+      vuuid
+    }
+  }
+}
 ```
 
 **Example #2: Get Last 10 Press Releases:**
