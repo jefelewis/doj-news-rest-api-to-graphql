@@ -1,5 +1,5 @@
 {
-  getLastTenBlogEntries {
+  getAllSpeeches {
     metadata {
       responseInfo {
         status

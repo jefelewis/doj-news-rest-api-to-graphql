@@ -5,16 +5,16 @@ import { gql } from 'apollo-server-express';
 const TYPEDEFS = gql`
 
   type Query {
-    getLastTenBlogEntries: RootQuery
+    getAllBlogEntries: RootQuery
     getBlogEntryById(ID: String): RootQuery
 
-    getLastTenPressReleases: RootQuery
+    getAllPressReleases: RootQuery
     getPressReleaseById(ID: String): RootQuery
 
-    getLastTenSpeeches: RootQuery
+    getAllSpeeches: RootQuery
     getSpeechById(ID: String): RootQuery
 
-    getLastTenVacancyAnnouncements: RootQuery
+    getAllVacancyAnnouncements: RootQuery
     getVacancyAnnouncementById(ID: String): RootQuery
   }
 
@@ -41,16 +41,11 @@ const TYPEDEFS = gql`
   }
 
   type Result {
-    attachments: [Attachment]
     body: String
     changed: String
     component: [Component]
     created: String
     date: String
-    image: [Image]
-    teaser: [Teaser]
-    title: String
-    topic: [Topic]
     url: String
     uuid: String
     vuuid: String
@@ -59,22 +54,6 @@ const TYPEDEFS = gql`
   type Component {
     uuid: String
     name: String
-  }
-
-  type Attachment {
-    hi: String
-  }
-
-  type Image {
-    hi: String
-  }
-
-  type Teaser {
-    hi: String
-  }
-
-  type Topic {
-    hi: String
   }
 `;
 

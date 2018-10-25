@@ -1,5 +1,5 @@
 {
-  getLastTenPressReleases {
+  getAllVacancyAnnouncements {
     metadata {
       responseInfo {
         status
