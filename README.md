@@ -38,23 +38,23 @@ http://localhost:4000/graphql
 ```
 
 ## GraphQL Query Examples
-### Example #1: Get Last 10 Blog Entries:
+**Example #1: Get Last 10 Blog Entries:**
 ```
 Query #1
 ```
 
-### Example #2: Get Last 10 Press Releases:
+**Example #2: Get Last 10 Press Releases:**
 ```
 Query #1
 ```
 
 
-### Example #3: Get Press Release By ID:
+**Example #3: Get Press Release By ID:**
 ```
 Query #1
 ```
 
-### Example #4: Get Last 10 Speeches:
+**Example #4: Get Last 10 Speeches:**
 ```
 Query #1
 ```
