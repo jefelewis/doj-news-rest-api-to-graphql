@@ -37,10 +37,10 @@ http://localhost:4000/graphql
 ```
 
 ## GraphQL Query Examples
-**Example #1: Get Last 10 Blog Entries:**
+**Example #1: Get All Blog Entries:**
 ```
 {
-  getLastTenBlogEntries {
+  getAllBlogEntries {
     metadata {
       responseInfo {
         status
@@ -70,10 +70,10 @@ http://localhost:4000/graphql
 }
 ```
 
-**Example #2: Get Last 10 Press Releases:**
+**Example #2: Get All Press Releases:**
 ```
 {
-  getLastTenPressReleases {
+  getAllPressReleases {
     metadata {
       responseInfo {
         status
@@ -121,10 +121,10 @@ http://localhost:4000/graphql
 }
 ```
 
-**Example #4: Get Last 10 Speeches:**
+**Example #4: Get All Speeches:**
 ```
 {
-  getLastTenSpeeches {
+  getAllSpeeches {
     metadata {
       responseInfo {
         status
@@ -154,10 +154,10 @@ http://localhost:4000/graphql
 }
 ```
 
-**Example #5: Get Last 10 Vacancy Announcements:**
+**Example #5: Get All Vacancy Announcements:**
 ```
 {
-  getLastTenVacancyAnnouncements {
+  getAllVacancyAnnouncements {
     metadata {
       responseInfo {
         status
