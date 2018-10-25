@@ -46,6 +46,7 @@ const TYPEDEFS = gql`
     component: [Component]
     created: String
     date: String
+    title: String
     url: String
     uuid: String
     vuuid: String
