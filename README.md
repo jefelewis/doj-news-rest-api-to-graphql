@@ -1,46 +1,46 @@
-# United States Department of Justice's GraphQL Server
-Operation Refactor America's wrapped United States Department of Justice's REST API (DOJ News) to GraphQL Server. The REST endpoints have been mapped as GraphQL types and resolvers.
+# United States Department of Justice GraphQL API
+Only a fraction of government agencies provide public APIs, which are usually poorly documented and built on REST architecture. Our mission is to retrieve that valuable data and convert them into an intuitive and modern GraphQL API. The REST endpoints have been mapped as GraphQL types and resolvers.
 
-If you'd like to contribute to this project, please fork this repository and submit a pull request.
-
-## On This Page
-*  [About the Data](#about-the-data)
-*  [About Operation Refactor America](#about-operation-refactor-america)
-*  [GraphQL Server: Apollo Server](#graphql-server-apollo-server)
-*  [GraphQL Server: Start](#graphql-server-start)
-*  [GraphQL Server: Query](#graphql-server-query)
-*  [GraphQL Server: Testing API Endpoints](#graphql-server-testing-api-endpoints)
-*  [API Data: ](#api-data)
+## On This Page:
+*  [About The Data](#about-the-data)
+*  [Built Using](#built-using)
+*  [Getting Started](#getting-started)
 *  [GraphQL Query Examples](#graphql-query-examples)
 
-## About Operation Refactor America
-Operation Refactor America is a not associated with any government agency, but our goal is to empower citizens with transparent data. Only a fraction of government agencies provide public APIs, which are usually poorly documented, built on archaic REST architecture, and contains scattered data. Our mission is to retrieve that valuable data and convert them into an intuitive and modern API using GraphQL Server.
-
-## About the Data
+## About The Data:
 The data comes directly from the United States Department of Justice's REST API (DOJ News). The REST endpoints have been mapped as GraphQL types and resolvers. A summary of endpoints and documentation can be found here: https://www.justice.gov/developer/api-documentation/api_v1
-
 **Note: Maximum of 10 requests per second or "experience degraded performance and may be blocked entirely"**
 
-## GraphQL Server: Apollo Server
-This GraphQL server uses apollo-server-express and not Facebook's graphql-express.
+## Built Using:
+* [Node.js](https://nodejs.org/en) - JavaScript Runtime Environment
+* [Express](https://expressjs.com) - Web framework
+* [GraphQL](https://graphql.org) - Query Language
+* [Apollo Server 2](https://www.apollographql.com/docs/apollo-server) - GraphQL Server
+* [Babel 7](https://babeljs.io) - Transpiler/Transcompiler
 
-## GraphQL Server: Start
-    npm run server
+## Getting Started:
+**1. Install Dependencies**
+```
+npm install
+```
 
-## GraphQL Server: Query
-    http://localhost:4000/graphiql
+**2. Start Server**
+```
+npm run server
+```
 
-## GraphQL Server: Testing API Endpoints
-    npm jest
+**3. Execute GraphQL Queries Here (Browser Automatically Opens On Server Start)**
+```
+http://localhost:4000/graphql
+```
 
-## API Data: 
 
-
-
-## GraphQL Query Examples
+## GraphQL Query Examples:
 ### Example #1: Number of all Burglary Victims (Annually)
 **Query:**
-
+```
+Query #1
+```
 
 
 
