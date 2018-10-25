@@ -1,6 +1,5 @@
-// Imports: Axios
+// Imports: Dependencies
 import axios from 'axios';
-
 
 // GraphQL: Resolvers
 const RESOLVERS = {

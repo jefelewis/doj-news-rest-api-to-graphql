@@ -1,6 +1,5 @@
-// Imports: GraphQL
+// Imports: Dependencies
 import { gql } from 'apollo-server-express';
-
 
 // GraphQL: TypeDefs
 const TYPEDEFS = gql`

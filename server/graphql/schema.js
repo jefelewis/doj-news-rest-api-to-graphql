@@ -1,10 +1,9 @@
-// Imports: GraphQL
+// Imports: Dependencies
 import { ApolloServer } from 'apollo-server-express';
 
 // Imports: GraphQL TypeDefs & Resolvers
 import TYPEDEFS from './types';
 import RESOLVERS from './resolvers';
-
 
 // GraphQL: Schema
 const SERVER = new ApolloServer({
