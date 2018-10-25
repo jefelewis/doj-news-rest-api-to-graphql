@@ -11,7 +11,7 @@ Only a fraction of government agencies provide public APIs, which are usually po
 The data comes directly from the United States Department of Justice's REST API (DOJ News). The REST endpoints have been mapped as GraphQL types and resolvers. A summary of endpoints and documentation can be found here: https://www.justice.gov/developer/api-documentation/api_v1
 
 **Notes:**
-- Maximum of 10 requests per second or "experience degraded performance and may be blocked entirely" - Department of Justice
+- Maximum of 10 requests per second - Department of Justice
 - No API Key required
 
 ## Built Using
